@@ -17,27 +17,19 @@
 </head>
 <body>
 	<div class="main">
-		<p>Menu Logado</p>
 		<input type="checkbox" id="chk" aria-hidden="true">
 
 			<div class="signup">
-				<form>
-					<label for="chk" aria-hidden="true">Sign up</label>
-					<input type="text" name="txt" placeholder="User name" required="">
-					<input type="email" name="email" placeholder="Email" required="">
-					<input type="password" name="pswd" placeholder="Password" required="">
-					<button>Sign up</button>
-				</form>
+
+					<label for="chk" aria-hidden="true">Menu</label>
+				<a style="color:white">{{usuario}}</a>
+					<p style="color:white" href="/pag_cadastro_produto">Cadastrar Notícia</p>
+				<p style="color:white" href="/pag_cadastro_produto">Editar Notícia</p>
+				<p style="color:white" href="/pag_cadastro_produto">Deletar Notícia</p>
+
+
 			</div>
 
-			<div class="login">
-				<form action="/login" method="post">
-					<label for="chk" aria-hidden="true">Login</label>
-					<input type="email" name="email" placeholder="Email" required="">
-					<input type="password" name="pswd" placeholder="Password" required="">
-					<button>Login</button>
-				</form>
-			</div>
 	</div>
 </body>
 </html>

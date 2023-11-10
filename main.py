@@ -5,12 +5,10 @@ from flask import *
 from dao import *
 
 app = Flask(__name__)
-
+app.secret_key = 'ajshdgah123'
 @app.route("/")
 def home():
     return render_template('index.html')
-
-
 
 
 @app.route("/login", methods=["POST"])
@@ -25,9 +23,10 @@ def login():
     for usuario in tupla:
         if(login == usuario[0] and senha == usuario[1]):
             session['usuario'] = login
-            return render_template('menu_logado.html')
+            return render_template('menu_logado.html', usuario=login)
 
     return render_template('erro_cadastro.html')
+
 
 @app.route("/cadastrar", methods=["POST"])
 def cadastrarusuario():
