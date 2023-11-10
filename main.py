@@ -25,7 +25,7 @@ def login():
     for usuario in tupla:
         if(login == usuario[0] and senha == usuario[1]):
             session['usuario'] = login
-            return render_template('index.html')
+            return render_template('menu_logado.html')
 
     return render_template('erro_cadastro.html')
 
