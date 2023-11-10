@@ -1,0 +1,7 @@
+psycopg2
+flask
+itsdangerous
+click
+blinker
+colorama
+MarkupSafe
